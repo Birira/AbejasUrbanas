@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "bun run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "bunx gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",

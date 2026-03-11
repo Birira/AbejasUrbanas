@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/AbejasUrbanas',
+  // Ruta base para GitHub Pages: https://birira.github.io/AbejasUrbanas/
+  base: '/AbejasUrbanas/',
   plugins: [react()],
 })
