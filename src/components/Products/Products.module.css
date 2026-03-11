@@ -1,0 +1,81 @@
+.heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 var(--space-2xl);
+  color: var(--color-text);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--space-xl);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.placeholder {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(
+    135deg,
+    var(--color-surface-alt) 0%,
+    var(--color-border) 100%
+  );
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: var(--space-md) var(--space-md) var(--space-xs);
+  color: var(--color-text);
+}
+
+.cardDesc {
+  margin: 0 var(--space-md) var(--space-md);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.cardPrice {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-primary-dark);
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-md) var(--space-md);
+  gap: var(--space-md);
+  margin-top: auto;
+}
+
+.addToCart {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
