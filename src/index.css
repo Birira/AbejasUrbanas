@@ -103,6 +103,14 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+@media (max-width: 48rem) {
+  :root {
+    /* Ajustes de espaciado y padding para móvil */
+    --container-padding: var(--space-md);
+    --space-3xl: 3rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
